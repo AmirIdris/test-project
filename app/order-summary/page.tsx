@@ -150,7 +150,7 @@ export default function OrderSummaryPage() {
                 Back
               </button>
               <button
-                onClick={() => window.location.href = '/signin'}
+                onClick={() => window.location.href = '/setup-office'}
                 className="flex-1 px-6 py-3 rounded-lg bg-[#f59e0b] text-white hover:bg-[#f59e0b]/90 transition-colors"
               >
                 Proceed to Payment
