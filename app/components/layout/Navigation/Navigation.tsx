@@ -55,7 +55,7 @@ export const Navigation = () => {
       </div>
 
       {/* Navigation Bar */}
-      <nav className="w-full bg-black/40 backdrop-blur-xl border-b border-white/10 shadow-lg">
+      <nav className="sticky top-0 z-40 w-full bg-black/40 backdrop-blur-xl border-b border-white/10 shadow-lg">
         <div className="max-w-[1400px] mx-auto px-8 py-4 flex justify-center items-center">
           <div className="hidden md:flex items-center gap-10">
             <Link href="/" className={getLinkClass('/')}>
