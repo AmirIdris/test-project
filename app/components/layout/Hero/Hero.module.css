@@ -1,0 +1,116 @@
+.heroContainer {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('/images/hero-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 2rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding-bottom: 6rem;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+  margin-bottom: 2rem;
+  white-space: nowrap;
+  padding-top: 4rem;
+}
+
+.highlight {
+  color: #f59e0b;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  font-size: 0.875rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+  z-index: 2;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.footerLink {
+  color: white;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.2s ease-in-out;
+  margin: 0 1rem;
+}
+
+.footerLink:hover {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .content {
+    gap: 3rem;
+    padding-bottom: 4rem;
+  }
+
+  .title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    white-space: normal;
+    padding-top: 2rem;
+  }
+
+  .buttonGroup {
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 2rem;
+    gap: 1.5rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+  }
+
+  .footerLink {
+    margin: 0.5rem 0;
+  }
+} 
